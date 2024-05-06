@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -25,7 +24,7 @@ body {
 }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -102,6 +101,7 @@ header{
     background: #190033;
     padding: 100px;
     z-index: 2;
+    overflow: hidden;
 }
 
 .sec h2 {
