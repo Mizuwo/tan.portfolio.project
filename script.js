@@ -24,12 +24,12 @@ let projcard = document.querySelector('.projcard');
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
-    fullname.style.marginTop = value <= 500 ? value * 2.5 + 'px' : '750px';
-    tree.style.top = value <= 500 ? value * -1.5 + 'px' : '-750px';
-    tree.style.left = value <= 500 ? value * 1.5 + 'px' : '750px';
-    bg5.style.left = value <= 500 ? value * 1.5 + 'px' : '750px';
-    bg4.style.left = value <= 500 ? value * -1.5 + 'px' : '-750px';
-    bg1.style.top = value <= 500 ? value * 1.5 + 'px' : '750px';
+    fullname.style.marginTop = value <= 500 ? value * 2.5 + 'px' : '700px';
+    tree.style.top = value <= 500 ? value * -1.5 + 'px' : '-400px';
+    tree.style.left = value <= 500 ? value * 1.5 + 'px' : '400px';
+    bg5.style.left = value <= 500 ? value * 1.5 + 'px' : '400px';
+    bg4.style.left = value <= 500 ? value * -1.5 + 'px' : '-400px';
+    bg1.style.top = value <= 500 ? value * 1.5 + 'px' : '400px';
 });
 
 hat.addEventListener('click', ()=> {

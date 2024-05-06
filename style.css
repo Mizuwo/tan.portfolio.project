@@ -525,3 +525,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.idk {
+    overflow: hidden;
+}
