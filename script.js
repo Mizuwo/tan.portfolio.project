@@ -21,7 +21,7 @@ let proj3 = document.querySelector('.proj3');
 let hatsm = document.querySelector('.hatsm');
 let projcard = document.querySelector('.projcard');
 
-window.addEventListener('scroll', () => {
+/* window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
     fullname.style.marginTop = value <= 500 ? value * 2.5 + 'px' : '700px';
@@ -30,9 +30,10 @@ window.addEventListener('scroll', () => {
     bg5.style.left = value <= 500 ? value * 1.5 + 'px' : '400px';
     bg4.style.left = value <= 500 ? value * -1.5 + 'px' : '-400px';
     bg1.style.top = value <= 500 ? value * 1.5 + 'px' : '400px';
-});
+}); */
 
 hat.addEventListener('click', ()=> {
+    hatsm.classList.toggle('zin');
     ht.classList.toggle('show');
     cs.classList.toggle('show');
     js.classList.toggle('show');
