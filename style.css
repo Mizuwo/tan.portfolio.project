@@ -218,6 +218,7 @@ header{
 
 
 .html{
+    position: relative;
     transform: translateY(-200px) translateX(100px) rotate(40deg);
     background: #ff7b64;
     z-index: -1000;
@@ -528,4 +529,249 @@ footer {
 
 .idk {
     overflow: hidden;
+    width: 100%;
+}
+
+@media (max-width: 1560px) {
+    .idk {
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1140px) {
+    header {
+        height: 150px;
+        padding: 10px;
+    }
+    .portfolio {
+        margin-right: 100px;
+    }
+    .navigation {
+        padding: 10px;
+        display: flex;
+    }
+    .navigation a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .80rem;
+        height: 40px;
+        text-align: center;
+    }
+    #fullname {
+        font-size: 4.2rem;
+    }
+    .idk img {
+        transform: translateY(-100px);
+    }
+    #H001 {
+        transform: translateY(140px);
+    }
+    #H002 {
+        transform: translateY(90px);
+    }
+    #H003 {
+        transform: translateY(90px);
+    }
+    #grass {
+        transform: translateY(10px);
+    }
+    .sec {
+        padding: 20px;
+    }
+    .aboutcont {
+        width: 100%;
+        height: 100vh;
+    }
+    .abouttext {
+        width: 500px;
+        height: 520px;
+    }
+    #first {
+        font-size: .69rem;
+    }
+    .navigation a{
+        background: var(--verymain-color);
+        color: white;
+    }
+    .navigation a:hover {
+        background: var(--main-color);
+        color: white;
+    }
+    .sec h2{
+        transform: translateX(60px);
+    }
+    .projects {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        border: none;
+    }
+    .projects h2 {
+        transform: translateX(-400px) translateY(90px);
+        scale: .8;
+    }
+    .proj {
+        width: 100%;
+        border: none;
+        transform: translateX(-120px) translateY(200px);
+        scale: .8;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+    }
+    .navigation {
+        width: 100%;
+        transform: translateX(90px);
+    }
+    .portfolio {
+        font-size: 1.68rem;
+        margin-right: 0;
+    }
+    #fullname {
+        font-size: 2.9rem;
+    }
+    #grass {
+        transform: translateY(-80px);
+    }
+    #H001 {
+        transform: translateY(300px);
+    }
+    #H002 {
+        transform: translateY(-70px);
+    }
+    #H003 {
+        transform: translateY(-70px);
+    }
+    .takip {
+        height: 100px;
+        width: 900px;
+    }
+    .aboutcont {
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+    }
+    .abouttext {
+        width: 500px;
+        height: 520px;
+        scale: 1.2;
+        transform: translateX(30px);
+    }
+    .abouttext.fs {
+        transform: translateX(135px) scale(1.2);
+    }
+    #first {
+        font-size: .55rem;
+    }
+    .skills {
+        scale: .7;
+        transform: translateY(200px) translateX(-90px);
+    }
+    .html.fs {
+        
+        transform: translateX(-90px) scale(3.4) translateY(-140px);
+        z-index: 1000;
+    }
+    .css.fs {
+        
+        transform: translateX(-90px) scale(3.4) translateY(-244px);
+        z-index: 1000;
+    }
+    .js.fs {
+        
+        transform: translateX(-90px) scale(3.4) translateY(-347px);
+        z-index: 1000;
+    }
+    .proj {
+        scale: .8;
+        transform: translateX(-350px) translateY(300px);
+    }
+    .projects h2{
+        transform: translateX(-120px) translateY(150px);
+        scale: 1.1;
+    }
+    .proj1.fs {
+        transform: rotate(0deg) translateX(500px) translateY(-100px) scale(1.7);
+        z-index: 1000;   
+    }
+    .proj2.fs {
+        transform: rotate(0deg) translateX(500px) translateY(-510px) scale(1.7);
+        z-index: 1000;   
+    }
+    
+    .proj3.fs {
+        transform: rotate(0deg) translateX(500px) translateY(-915px) scale(1.7);
+        z-index: 1000;   
+    }
+    .hatsm.small {
+        transition: all .4s ease;
+        transform: scale(.2) translateY(380px);
+    }
+}
+@media (max-width: 575px) {
+    #professional-summary {
+        font-size: 1.2rem;
+    }
+    .navigation {
+        display: flex;
+        width: 900px;
+        transform: translateX(10px);
+    }
+    .navigation a{
+        font-size: .6rem;
+    }
+    #H001 {
+        transform: translateY(400px);
+    }
+    .abouttext {
+        position: absolute;
+        width: 350px;
+        height: 420px;
+        scale: 1.2;
+        transform: translateX(0px);
+    }
+    .abouttext.fs {
+        transform: translateX(0px) scale(1.1);
+    }
+    #first {
+        font-size: 8px;
+    }
+    .proj {
+        scale: .6;
+        transform: translateX(-450px) translateY(300px);
+    }
+    .projects h2{
+        transform: translateX(0px) translateY(90px);
+        scale: 1;
+    }
+    .html.fs {
+        
+        transform: translateX(240px) scale(3.4) translateY(-140px);
+        z-index: 1000;
+    }
+    .css.fs {
+        
+        transform: translateX(240px) scale(3.4) translateY(-244px);
+        z-index: 1000;
+    }
+    .js.fs {
+        
+        transform: translateX(240px) scale(3.4) translateY(-347px);
+        z-index: 1000;
+    }
+
 }
