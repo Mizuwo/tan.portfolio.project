@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -17,14 +21,13 @@
 }
 
 body {
+    width: 100%;
     background: rgb(189, 163, 255);
-    min-height: 100vh;
-    overflow-x: hidden;
     margin: 0;
 }
 
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,6 +36,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
+    overflow: hidden;
 }
 
 .portfolio {
@@ -62,7 +66,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #fullname {
@@ -119,19 +125,22 @@ header{
 
 
 .aboutcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 45px;
     padding: 0;
-    border: 2px solid var(--bg-color);
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .abouttext {
+    left: 80px;
+    position: absolute;
     border-radius: 25px;
     background: var(--verymain-color);
+    max-width: 700px;
+    max-height: 500px;
     width: 700px;
     height: 500px;
     border: 2px solid var(--bg-color);
@@ -143,20 +152,29 @@ header{
 }
 
 .abouttext.fs {
+    transition: all .4s ease;
     z-index: 2000;
-    transform: scale(1.2) translateX(200px) translateY(-60px);
+    transform: scale(1.1);
+    left: auto;
 }
 
 .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 500px;
+    transform: rotate(40deg) translateX(150px) translateY(-10px);
     
 }
 
 .wskill {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 300px;
-    transform: translateY(300px) rotate(45deg) translateX(-100px) scale(.85);
     z-index: 1000;
 }
 
@@ -174,7 +192,7 @@ header{
 }
 
 .card {
-    position: relative;
+    position: absolute;
     border: 2px solid white;
     width: 200px;
     height: 300px;
@@ -182,7 +200,6 @@ header{
     padding: 20px;
     filter: drop-shadow(0px 20px 20px black);
     border-radius: 20px;
-    transition: all .4s ease;
 }
 
 
@@ -219,9 +236,10 @@ header{
 
 .html{
     position: relative;
-    transform: translateY(-200px) translateX(100px) rotate(40deg);
+    transform: scale(.2);
     background: #ff7b64;
     z-index: -1000;
+    transition: all .4s ease;
 }
 .html img {
     margin-top: 20px;
@@ -230,9 +248,10 @@ header{
 }
 
 .css {
-    transform: translateY(-1500px) translateX(100px) rotate(40deg);
+    transform: scale(.2);
     background: #009ce6;
     z-index: -1000;
+    transition: all .6s ease;
 }
 .css img {
     margin-top: 20px;
@@ -241,9 +260,10 @@ header{
 }
 
 .js {
-    transform: translateY(-2700px) translateX(100px) rotate(40deg);
+    transform: scale(.2);
     background: #ffca3e;
     z-index: -1000;
+    transition: all .8s ease;
 }
 .js img {
     margin-top: 20px;
@@ -263,7 +283,7 @@ header{
 }
 
 .html.show{
-    transform: translateY(-450px) rotate(10deg);
+    transform:rotate(-30deg) translateY(-400px);
     background: #ff7b64;
     z-index: 100;
 }
@@ -274,7 +294,7 @@ header{
 }
 
 .css.show {
-    transform: translateY(-700px) translateX(220px) rotate(40deg);
+    transform:rotate(0deg) translateY(-400px);
     background: #009ce6;
     z-index: 100;
 }
@@ -285,7 +305,7 @@ header{
 }
 
 .js.show {
-    transform: translateY(-880px) translateX(370px) rotate(60deg);
+    transform:rotate(30deg) translateY(-400px);
     background: #ffca3e;
     z-index: 100;
 }
@@ -297,22 +317,31 @@ header{
 
 #first {
     padding: 20px;
+    line-height: 1.6;
     font-size: .77rem;
+    max-width: 100%;
+    width: 100%;
 }
 
 /*bbbb*/
 
 .html.fs {
-    transform: rotate(0deg) translateX(-200px) translateY(-350px) scale(2);
+    z-index: 1000;
+    transform: rotate(-40deg) scale(2) translateY(-90px);
 }
 .css.fs {
-    transform: rotate(0deg) translateX(-200px) translateY(-700px) scale(2);
+    z-index: 1000;
+    transform: rotate(-40deg) scale(2) translateY(-90px);
 }
 .js.fs {
-    transform: rotate(0deg) translateX(-200px) translateY(-1050px) scale(2);
+    z-index: 1000;
+    transform: rotate(-40deg) scale(2) translateY(-90px);
 }
 
 .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 150px;
     background: #190033;
     width: 100%;
@@ -329,6 +358,9 @@ header{
 }
 
 .proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 150px ;
     width: 100%;
     height: 100%;
@@ -337,20 +369,19 @@ header{
 }
 
 .hat {
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 200px;
-    transform: translateY(400px) translateX(550px);
     z-index: 1000;
     transition: all .4s ease;
 }
 
 .hatsm.small {
-    transform: scale(.6) translateY(30px);
+    transform: scale(.3) translateY(600px);
 }
 
 .hat img {
-    transform: translateY(-20px);
+    transform: translateY(80px);
     scale: 1.6;
     width: 100%;
     height: 100%;
@@ -360,7 +391,7 @@ header{
 
 
 .projcard {
-    position: relative;
+    position: absolute;
     border-radius: 20px;
     border: 3px solid var(--bg-color);
     width: 300px;
@@ -377,7 +408,6 @@ header{
     position: absolute;
     color: var(--bg-color);
     font-size: 2rem;
-    transform: translateY(150px) translateX(90px);
 }
 
 .projcard h3 {
@@ -433,29 +463,29 @@ header{
 }
 
 .proj1 {
-    transform: translateY(-100px) translateX(300px) rotate(-30deg);
+    transform: scale(.7)  translateY(-290px) rotate(-45deg) translateX(-250px);
 }
 
 .proj2 {
-    transform: translateY(-600px) translateX(520px);
+    transform: scale(.7) translateY(-190px);
 }
 
 .proj3 {
-    transform: translateY(-920px) translateX(750px) rotate(30deg);
+    transform: scale(.7) translateY(-290px) rotate(45deg) translateX(250px);
 }
 
 .proj1.fs {
-    transform: rotate(0deg) translateX(500px) translateY(-200px) scale(1.3);
+    transform: rotate(0deg) scale(1.3);
     z-index: 1000;   
 }
 
 .proj2.fs {
-    transform: rotate(0deg) translateX(500px) translateY(-610px) scale(1.3);
+    transform:scale(1.3);
     z-index: 1000;   
 }
 
 .proj3.fs {
-    transform: rotate(0deg) translateX(500px) translateY(-1015px) scale(1.3);
+    transform: rotate(0deg) scale(1.3);
     z-index: 1000;   
 }
 
@@ -532,15 +562,8 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 1560px) {
-    .idk {
-        overflow: hidden;
-        width: 100%;
-        height: 100vh;
-    }
-}
 
-@media (max-width: 1140px) {
+/* @media (max-width: 1140px) {
     header {
         height: 150px;
         padding: 10px;
@@ -774,4 +797,4 @@ footer {
         z-index: 1000;
     }
 
-}
+} */
