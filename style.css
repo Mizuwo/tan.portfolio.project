@@ -359,6 +359,8 @@ header{
 }
 
 .proj {
+    position: absolute;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
