@@ -781,7 +781,7 @@ footer {
         margin: 0;
     }
     #H001 {
-        transform: translateY(500px);
+        transform: translateY(520px);
     }
     #H002, #H003 {
         transform: translateY(-35px);
@@ -791,6 +791,9 @@ footer {
     }
     .idk img {
         transform: translateY(-45px);
+    }
+    .sec {
+        height: 150vh;
     }
 
     .abouttext {
@@ -802,14 +805,15 @@ footer {
         transform: translateX(0px) translateY(-90px);
     }
     .sec h2 {
-        transform: translateY(-50px) scale(.5);
+        transform: translateY(90px);
+        font-size: 1.5rem;
     }
     .abouttext.fs {
         transform: translateY(-90px) scale(1.05);
     }
 
     .skills {
-        transform: translateX(-90px) translateY(150px) scale(.68) rotate(40deg);
+        transform: translateX(0px) translateY(230px) scale(.7) rotate(40deg);
     }
     #first {
         font-size: 8px;
