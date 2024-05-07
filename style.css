@@ -751,8 +751,23 @@ footer {
         transition: all .4s ease;
         transform: scale(.2) translateY(380px);
     }
-}
+} */
 @media (max-width: 575px) {
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+    }
+    .portfolio {
+        margin: 0;
+        font-size: 1rem;
+    }
+    #fullname {
+        font-size: 2.2rem;
+    }
     #professional-summary {
         font-size: 1.2rem;
     }
@@ -762,46 +777,52 @@ footer {
         transform: translateX(10px);
     }
     .navigation a{
-        font-size: .6rem;
+        font-size: .55rem;
     }
     #H001 {
-        transform: translateY(400px);
+        transform: translateY(450px);
     }
+    #H002, #H003 {
+        transform: translateY(-35px);
+    }
+    #grass {
+        transform: translateY(1px);
+    }
+    .idk img {
+        transform: translateY(-45px);
+    }
+
     .abouttext {
+        left: auto;
         position: absolute;
         width: 350px;
         height: 420px;
         scale: 1.2;
-        transform: translateX(0px);
+        transform: translateX(0px) translateY(-90px);
+    }
+    .sec h2 {
+        transform: translateY(-50px) scale(.6);
     }
     .abouttext.fs {
         transform: translateX(0px) scale(1.1);
     }
+    .skills {
+        transform: translateX(-90px) translateY(150px) scale(.8) rotate(40deg);
+    }
     #first {
         font-size: 8px;
     }
+    .projects {
+        height: 150vh;
+        padding-bottom: 700px;
+    }
     .proj {
-        scale: .6;
-        transform: translateX(-450px) translateY(300px);
+        scale: 1;
+        transform:translateY(300px);
     }
     .projects h2{
-        transform: translateX(0px) translateY(90px);
+        transform: translateX(0px) translateY(-100px);
         scale: 1;
     }
-    .html.fs {
-        
-        transform: translateX(240px) scale(3.4) translateY(-140px);
-        z-index: 1000;
-    }
-    .css.fs {
-        
-        transform: translateX(240px) scale(3.4) translateY(-244px);
-        z-index: 1000;
-    }
-    .js.fs {
-        
-        transform: translateX(240px) scale(3.4) translateY(-347px);
-        z-index: 1000;
-    }
 
-} */
+}
