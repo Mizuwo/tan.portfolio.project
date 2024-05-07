@@ -769,18 +769,19 @@ footer {
         font-size: 2.2rem;
     }
     #professional-summary {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .navigation {
         display: flex;
-        width: 900px;
+        width: 500px;
         transform: translateX(10px);
     }
     .navigation a{
         font-size: .55rem;
+        margin: 0;
     }
     #H001 {
-        transform: translateY(450px);
+        transform: translateY(500px);
     }
     #H002, #H003 {
         transform: translateY(-35px);
@@ -801,13 +802,14 @@ footer {
         transform: translateX(0px) translateY(-90px);
     }
     .sec h2 {
-        transform: translateY(-50px) scale(.6);
+        transform: translateY(-50px) scale(.5);
     }
     .abouttext.fs {
-        transform: translateX(0px) scale(1.1);
+        transform: translateY(-90px) scale(1.05);
     }
+
     .skills {
-        transform: translateX(-90px) translateY(150px) scale(.8) rotate(40deg);
+        transform: translateX(-90px) translateY(150px) scale(.68) rotate(40deg);
     }
     #first {
         font-size: 8px;
