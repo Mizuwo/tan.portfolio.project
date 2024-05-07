@@ -813,7 +813,7 @@ footer {
     }
 
     .skills {
-        transform: translateX(0px) translateY(230px) scale(.7) rotate(40deg);
+        transform: translateX(0px) translateY(230px) scale(.7) rotate(0deg);
     }
     #first {
         font-size: 8px;
@@ -829,6 +829,21 @@ footer {
     .projects h2{
         transform: translateX(0px) translateY(-100px);
         scale: 1;
+    }
+    .projcard p {
+        font-size: .75rem;
+    }
+    .html.fs {
+        z-index: 1000;
+        transform: rotate(0deg) scale(2) translateY(-90px);
+    }
+    .css.fs {
+        z-index: 1000;
+        transform: rotate(0deg) scale(2) translateY(-90px);
+    }
+    .js.fs {
+        z-index: 1000;
+        transform: rotate(0deg) scale(2) translateY(-90px);
     }
 
 }
