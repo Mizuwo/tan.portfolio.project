@@ -24,7 +24,7 @@ let projcard = document.querySelector('.projcard');
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
-    fullname.style.marginTop = value <= 500 ? value * 2.5 + 'px' : '700px';
+    fullname.style.marginTop = value <= 500 ? value * 2.5 + 'px' : '750px';
     tree.style.top = value <= 500 ? value * -1.5 + 'px' : '-400px';
     tree.style.left = value <= 500 ? value * 1.5 + 'px' : '400px';
     bg5.style.left = value <= 500 ? value * 1.5 + 'px' : '400px';

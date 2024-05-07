@@ -147,10 +147,6 @@ header{
     transition: all .4s ease;
 }
 
-.abouttext:hover{
-    scale: 1.1;
-}
-
 .abouttext.fs {
     transition: all .4s ease;
     z-index: 2000;
@@ -408,6 +404,7 @@ header{
 
 .projects h2 {
     position: absolute;
+    transform: translateY(0px) translateX(-500px);
     color: var(--bg-color);
     font-size: 2rem;
     overflow: hidden;
@@ -805,7 +802,7 @@ footer {
         transform: translateX(0px) translateY(-90px);
     }
     .sec h2 {
-        transform: translateY(90px);
+        transform: translateY(90px) translateX(-50px);
         font-size: 1.5rem;
     }
     .abouttext.fs {
@@ -813,7 +810,7 @@ footer {
     }
 
     .skills {
-        transform: translateX(0px) translateY(230px) scale(.7) rotate(0deg);
+        transform: translateX(0px) translateY(330px) scale(.7) rotate(0deg);
     }
     #first {
         font-size: 8px;
@@ -827,7 +824,7 @@ footer {
         transform:translateY(300px);
     }
     .projects h2{
-        transform: translateX(0px) translateY(-100px);
+        transform: translateX(0px) translateY(-90px);
         scale: 1;
     }
     .projcard p {
